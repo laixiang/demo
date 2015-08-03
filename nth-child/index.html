@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>详解CSS中:nth-child的用法</title>
+</head>
+<style>
+    h3{
+        text-align: center;
+    }
+    .nth{
+        width: 400px;
+        overflow: hidden;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    .nth li{
+        margin:5px;
+        width: 20px;
+        height: 20px;
+        background: #ddd;
+        list-style: none;
+        display: inline-block;
+    }
+    .nth1 li:nth-child(2){
+        background: #090;
+    }
+    .nth2 li:nth-child(n+4){
+        background: #090;
+    }
+    .nth3 li:nth-child(-n+4){
+        background:#090
+    }
+    .nth4 li:nth-child(2n){
+        background:#090
+    }
+    .nth5 li:nth-child(2n-1){
+        background:#090
+    }
+    .nth6 li:nth-child(3n+1){
+        background:#090
+    }
+    .nth7 li:last-child{
+        background:#090
+    }
+    .nth8 li:nth-last-child(3){
+        background:#090
+    }
+</style>
+<body>
+    <h3><pre>li:nth-child(2){background:#090}</pre></h3>
+    <div class="nth nth1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-child(n+4){background:#090}</pre></h3>
+    <div class="nth nth2">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-child(-n+4){background:#090}</pre></h3>
+    <div class="nth nth3">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-child(2n){background:#090}</pre></h3>
+    <div class="nth nth4">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-child(2n-1){background:#090}</pre></h3>
+    <div class="nth nth5">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-child(3n+1){background:#090}</pre></h3>
+    <div class="nth nth6">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:last-child{background:#090}</pre></h3>
+    <div class="nth nth7">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <h3><pre>li:nth-last-child(3){background:#090}</pre></h3>
+    <div class="nth nth8">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+</body>
+</html>
